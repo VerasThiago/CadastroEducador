@@ -30,12 +30,13 @@
 
 	if(mysqli_query($conn,$sql)){
 		echo "<script>alert('Dados salvos com sucesso!');</script>";
+		echo "<script>window.location='http://localhost/CadastroEducador';</script>";
 	}
 	else{
 		echo "<script type='javascript'>alert('Erro ao salvar os dados.');</script>";
+		echo "<script>window.history.back();</script>";
 
 	}
-	echo "<script>window.history.back();</script>";
 ?>
 
 </body>
