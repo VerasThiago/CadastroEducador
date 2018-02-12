@@ -224,11 +224,12 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  background-color: #363E50;
 }
 
 .banner-content {
   text-align: center;
-  padding: 280px 0px 200px 0px;
+  padding: 180px 0px 100px 0px;
 }
 
 .banner-content h6 {
@@ -243,11 +244,11 @@ p {
 .banner-content h2 {
   font-size: 80px;
   font-weight: 700;
-  text-transform: uppercase;
-  color: #fff;
+  color: white;
   letter-spacing: 2px;
   margin-top: 0px;
-  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px black;
+  overflow: hidden;
 }
 
 .banner-content ul {
@@ -263,7 +264,7 @@ p {
 
 
 .intro {
-  background-color: #46bae2;
+  background-color: #363E50;
   text-align: center;
   padding: 80px 0px;
 }

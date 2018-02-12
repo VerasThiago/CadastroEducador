@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+.background{
+   height: 100%;
+   width: 100%;
+   background-color: #363E50;
+   padding:  40px;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  height:  100px;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  overflow:  scroll;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+  border-collapse: collapse;
+
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+#myInput {
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+#data{
+    width: 100%;
+    height: 540px;
+    overflow:  auto;
+}
+div.scrollmenu {
+    background-color: #363E50;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+
+
+
+.scrollOptions {
+    display: inline-block;
+    height:200px;
+    max-width: 500px;
+    width:100%;
+    overflow:auto;
+    white-space: nowrap;
+    overflow-y:scroll;
+}
+
+
+.listaCliente{
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 600px;
+}
+
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+tr:nth-child(odd) {
+    background-color: white;
+}
+a {
+    color: black;
+}
+

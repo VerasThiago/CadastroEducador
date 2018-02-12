@@ -1,18 +1,12 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>Power - Bootstrap HTML5 Template</title>
+        <title>Seletiva Educador Social Voluntario</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!-- 
-Power Template 
-http://www.templatemo.com/tm-508-power
--->
+
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
         
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -26,126 +20,16 @@ http://www.templatemo.com/tm-508-power
         <script type="text/javascript" src="form/view.js"></script>
         <script type="text/javascript" src="form/calendar.js"></script>
         <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
-
         <style>
-            * {
-              box-sizing: border-box;
-            }
-
-            #myInput {
-              background-image: url('/css/searchicon.png');
-              background-position: 10px 10px;
-              background-repeat: no-repeat;
-              width: 100%;
-              font-size: 16px;
-              padding: 12px 20px 12px 40px;
-              border: 1px solid #ddd;
-              margin-bottom: 12px;
-            }
-
-            #myTable {
-              border-collapse: collapse;
-              height:  100px;
-              border: 1px solid #ddd;
-              font-size: 18px;
-              overflow:  scroll;
-            }
-
-            #myTable th, #myTable td {
-              text-align: left;
-              padding: 12px;
-            }
-
-            #myTable tr {
-              border-bottom: 1px solid #ddd;
-              border-collapse: collapse;
-
-            }
-
-            #myTable tr.header, #myTable tr:hover {
-              background-color: #f1f1f1;
-            }
-
-
-            #myInput {
-                background-position: 10px 12px;
-                background-repeat: no-repeat;
-                width: 100%;
-                font-size: 16px;
-                padding: 12px 20px 12px 40px;
-                border: 1px solid #ddd;
-                margin-bottom: 12px;
-            }
-            #data{
-                width: 100%;
-                height: 540px;
-                overflow:  auto;
-            }
-            div.scrollmenu {
-                background-color: #363E50;
-                overflow: auto;
-                white-space: nowrap;
-            }
-
-            div.scrollmenu a {
-                display: inline-block;
-                color: white;
-                text-align: center;
-                padding: 14px;
-                text-decoration: none;
-            }
-
-            div.scrollmenu a:hover {
-                background-color: #777;
-            }
-
-
-
-            .scrollOptions {
-                display: inline-block;
-                height:200px;
-                max-width: 500px;
-                width:100%;
-                overflow:auto;
-                white-space: nowrap;
-                overflow-y:scroll;
-            }
-
             .background{
                height: 100%;
                width: 100%;
                background-color: #363E50;
                padding:  40px;
             }
-            .listaCliente{
-                margin-left: 500px;
-                margin-right: 500px;
-                height: 600px;
-            }
-          
-
-            td, th {
-                border: 1px solid #dddddd;
-                text-align: left;
-                padding: 8px;
-            }
-
-            tr:nth-child(even) {
-                background-color: #dddddd;
-            }
-            tr:nth-child(odd) {
-                background-color: white;
-            }
-
-           
         </style>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-        <![endif]-->
-
-
         <div class="site-main" id="sTop">
             <div class="site-header">
                 <div class="main-header">
@@ -163,7 +47,7 @@ http://www.templatemo.com/tm-508-power
                                         <a href="#top" class="navbar-brand">Nome do APP</a>
                                         <div id="main-nav" class="collapse navbar-collapse">
                                             <ul class="menu-first nav navbar-nav" style="margin-right: 20px;">
-                                                <li class="active"><a href="#">Home</a></li>
+                                                <li class="active"><a href="index.html">Home</a></li>
                                                 <li><a href="#contact-us">Contact</a></li>                                 
                                                 <li><a href="pre_entrevista.html">Voltar</a></li>
                                             </ul>                                    
@@ -180,91 +64,90 @@ http://www.templatemo.com/tm-508-power
 
         <div class="banner" style = "">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div id = "teste" class="banner-content" style = "height:   200px; ">
-                            <h2>Lista de clientes</h2>
-                        </div>
-                    </div>
-                </div>
+                <div id = "teste" class="banner-content" style = ""></div>
             </div>
         </div>
 
         <div class = "background"> 
             <div id="form_container">
-                <form id="form_71414" class="appnitro" style = "margin-top:0px;" method="post" action="">
+                <form id="form_71414" class="appnitro" style = "margin-top:0px;" method="post" action="php/insert_interview_db.php">
                     <ul >
-                            
                         <li id="li_6" >
                             <label class="description" for="element_6">Atuação [Educação Integral] </label>
                             <span>
-                                <input id="element_6_1" name="element_6" class="element radio" type="radio" value="1" />
+                                <input id="element_6_1" name="integral" class="element radio" type="radio" value="1" />
                                 <label class="choice" for="element_6_1">Sim</label>
-                                <input id="element_6_2" name="element_6" class="element radio" type="radio" value="2" />
+                                <input id="element_6_2" name="integral" class="element radio" type="radio" value="2" />
                                 <label class="choice" for="element_6_2">Não</label>
                             </span> 
                         </li>
                         <li id="li_8" >
                             <label class="description" for="element_8">Atuação [Atendimento Especializado] </label>
                             <span>
-                                <input id="element_8_1" name="element_8" class="element radio" type="radio" value="1" />
+                                <input id="element_8_1" name="especializado" class="element radio" type="radio" value="1" />
                                 <label class="choice" for="element_8_1">Sim</label>
-                                <input id="element_8_2" name="element_8" class="element radio" type="radio" value="2" />
+                                <input id="element_8_2" name="especializado" class="element radio" type="radio" value="2" />
                                 <label class="choice" for="element_8_2">Não</label>
                             </span> 
                         </li>
                         <li id="li_7" >
-                            <label class="description" for="element_7">Está inscrito em algum Programa ... (?) </label>
+                            <label class="description" for="element_7">Está inscrito em algum programa social </label>
                             <span>
-                                <input id="element_7_1" name="element_7" class="element radio" type="radio" value="1" />
+                                <input id="element_7_1" name="programa" class="element radio" type="radio" value="1" />
                                 <label class="choice" for="element_7_1">Sim</label>
-                                <input id="element_7_2" name="element_7" class="element radio" type="radio" value="2" />
+                                <input id="element_7_2" name="programa" class="element radio" type="radio" value="2" />
                                 <label class="choice" for="element_7_2">Não</label>
                             </span> 
                         </li>
                         <li id="li_1" >
                             <label class="description" for="element_1">Nome do Responsável Legal </label>
                             <div>
-                                <input id="element_1" name="element_1" class="element text large" type="text" maxlength="255" value=""/> 
+                                <input id="element_1" name="nomeResp" class="element text large" type="text" maxlength="255" value=""/> 
                             </div> 
                         </li>       
                         <li id="li_2" >
                             <label class="description" for="element_2">Suas habilidades Cultura e Arte </label>
                             <div>
-                                <textarea id="element_2" name="element_2" class="element textarea small"></textarea> 
+                                <textarea id="element_2" name="habArte" class="element textarea small"></textarea> 
                             </div> 
                         </li>
                         <li id="li_3" >
                             <label class="description" for="element_3">Suas habilidades Esporte e Lazer </label>
                             <div>
-                                <textarea id="element_3" name="element_3" class="element textarea small"></textarea> 
+                                <textarea id="element_3" name="habEsporte" class="element textarea small"></textarea> 
                             </div> 
                         </li>
                         <li id="li_9" >
                         <label class="description" for="element_9">Disponibilidade </label>
                             <span>
-                                <input id="element_9_1" name="element_9_1" class="element checkbox" type="checkbox" value="1" />
+                                <input id="element_9_1" name="mat" class="element checkbox" type="checkbox" value="1" />
                                 <label class="choice" for="element_9_1">Matutino</label>
-                                <input id="element_9_2" name="element_9_2" class="element checkbox" type="checkbox" value="1" />
+                                <input id="element_9_2" name="vesp" class="element checkbox" type="checkbox" value="1" />
                                 <label class="choice" for="element_9_2">Vespertino</label>
-                                <input id="element_9_3" name="element_9_3" class="element checkbox" type="checkbox" value="1" />
+                                <input id="element_9_3" name="not" class="element checkbox" type="checkbox" value="1" />
                                 <label class="choice" for="element_9_3">Noturno</label>
                             </span> 
                         </li>      
                         <li id="li_4" >
                             <label class="description" for="element_4">Unidade Escolar </label>
                             <div>
-                                <input id="element_4" name="element_4" class="element text large" type="text" maxlength="255" value=""/> 
+                                <input id="element_4" name="unidadeEscolar" class="element text large" type="text" maxlength="255" value=""/> 
                             </div> 
                         </li>
                         <li id="li_5" >
                             <label class="description" for="element_5">Outras habilidades </label>
                             <div>
-                                <textarea id="element_5" name="element_5" class="element textarea small"></textarea> 
+                                <textarea id="element_5" name="habExtra" class="element textarea small"></textarea> 
+                            </div> 
+                        </li>
+                        
+                        <li id="nomeCliente" style = "display: none;" >
+                            <div>
+                                <input id="element_14" name="nome" class="element text medium" type="text" maxlength="255" value="vai porra!"/> 
                             </div> 
                         </li>
                         <li class="buttons">
-                            <input type="hidden" name="form_id" value="71414" />
+                            <input type="hidden" name="form_id" value="71414"/>
                             <input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
                         </li>
                             </ul>
@@ -272,87 +155,13 @@ http://www.templatemo.com/tm-508-power
                     </div>
                 </div>
         
-            
-    
-        
         <script src="js/vendor/jquery-1.11.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
         <script src="js/bootstrap.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
-        <!-- Google Map -->
-        <script type="text/javascript">
-            $(document).ready(function() {
-                
-                // mobile nav toggle
-                $('#nav-toggle').on('click', function (event) {
-                    event.preventDefault();
-                    $('#main-nav').toggleClass("open");
-                });
-            });
-            function testes(){
-                if(localStorage.getItem("data")){
-                    data = localStorage.getItem("data");
-                    document.getElementById("teste").innerHTML  = '<h2>Entrevista: ' + data + '</h2>';
-                }
-            }
-        </script>
-        <script>testes();</script>
-
-        <script>
-            var ajax =  new XMLHttpRequest();
-            var method = "GET";
-            var url = "data.php";
-            var asynchronous = true;
-            ajax.open(method, url, asynchronous);
-            ajax.send();
-
-            ajax.onreadystatechange = function(){
-                if(this.readyState == 4 && this.status == 200){
-                    var data = JSON.parse(this.responseText);
-                    var html = '<table id="myTable" style = "width : 100%;" ><tr class="header"><th style="width:20px; height: 20px; ">CPF</th><th style="width:20px;">Nome</th></tr>'
-                    //var html = ' <table id="myTable" style = "width: 100%; height: 400px; overflow: auto">';
-                    for(var i = 0; i < data.length; i++){
-                        var firstName = data[i].nome;
-                        var cpf = data[i].cpf
-                        console.log('nome = ' + firstName);
-                        html = html + '<tr><a style = "padding: 0%;" href="#" "><td>' + cpf + '</td> <td>' + firstName + '</td></a></tr>';
-                        
-                    }
-                    html = html + '</table>'
-                    document.getElementById("data").innerHTML= html;
-                }    
-            }
-
-        </script>
-
-        <script>
-           
-           function myFunction() {
-             var input, filter, table, tr, td, i;
-             input = document.getElementById("myInput");
-             filter = input.value.toUpperCase();
-             table = document.getElementById("myTable");
-             tr = table.getElementsByTagName("tr");
-             for (i = 0; i < tr.length; i++) {
-               td = tr[i].getElementsByTagName("td")[0];
-               if (td) {
-                 if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                   tr[i].style.display = "";
-                 } else {
-                   tr[i].style.display = "none";
-                 }
-               }       
-             }
-           }
-            
-
-            
-
-
-        </script>
+        <script src="js/entrevista.js"></script>
+        <script>passingName();</script>
         
-        <!-- templatemo 406 flex -->
     </body>
 </html>

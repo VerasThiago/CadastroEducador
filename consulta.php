@@ -2,7 +2,7 @@
 	
 	$conn = mysqli_connect("localhost", "root","","clientes");
 
-	$query = "SELECT nome,cpf FROM `dadoscliente`";
+	$query = "SELECT nome,cpf,nota FROM entrevistacliente,dadoscliente WHERE entrevistacliente.user_id = dadoscliente.id ORDER BY nota DESC";
 
 	$result = mysqli_query($conn, $query);
 
@@ -12,5 +12,4 @@
 	while($row = mysqli_fetch_assoc($result)){
 		$data[]  = $row;
 	}
-
 	echo json_encode($data);
