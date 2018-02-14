@@ -2,7 +2,7 @@
 	
 	$conn = mysqli_connect("localhost", "root","","clientes");
 
-	$query = "SELECT nome,cpf,notaExperiencia,notaFormacao,notaEntrevista FROM entrevistacliente,dadoscliente WHERE entrevistacliente.user_id = dadoscliente.id ORDER BY (notaExperiencia+notaFormacao+notaEntrevista) DESC";
+	$query = "SELECT * FROM entrevistacliente,dadoscliente WHERE entrevistacliente.user_id = dadoscliente.id ORDER BY (notaExperiencia+notaFormacao+notaEntrevista) DESC";
 
 	$result = mysqli_query($conn, $query);
 

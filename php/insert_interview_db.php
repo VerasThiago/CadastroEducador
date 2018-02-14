@@ -8,7 +8,7 @@
 <?php
 	$conn = mysqli_connect("localhost", "root","","clientes");
 	
-	if( !(isset($_POST["integral"]) && isset($_POST["especializado"]) && isset($_POST["programa"])  && (isset($_POST["mat"]) || isset($_POST["vesp"]) ||isset($_POST["not"])))){
+	if( !(isset($_POST["integral"]) && isset($_POST["notaEntrevista"]) && isset($_POST["especializado"]) && isset($_POST["programa"])  && (isset($_POST["mat"]) || isset($_POST["vesp"]) ||isset($_POST["not"])))){
 		echo "<script>alert('Preencha todos os campos!');</script>";
 		echo "<script>window.history.back();</script>";
 		die();		
@@ -28,26 +28,27 @@
 	$idx = "arte";
 	$ok1 = 0;
 	$ok2 = 0;
-	if( $habArte == 1 )$ok1 = 1;
+	if($habArte == 1 )$ok1 = 1;
 	if($habEsporte == 1)$ok2 = 1;
 	for($i = 1; $i < 13; $i++){
 		$aux = isset($_POST[$idx.$i]) ? 1:0;
 		$habArte = $habArte . "-" . $aux;
 		if($aux == 1) $ok1 = 1;
 	}
-	$outroArte = $_POST["arte13"];
+	$outroArte = isset($_POST["arte13"]) ? $_POST["arte13"]:"";
 	$idx = "esporte";
 	for($i = 1; $i < 19; $i++){
 		$aux = isset($_POST[$idx.$i]) ? 1:0;
 		$habEsporte = $habEsporte . "-" . $aux;
-		if($aux == 1) $ok = 1;
+		if($aux == 1) $ok2 = 1;
 	}
+
 	if($ok1 == 0 || $ok2 == 0){
 		echo "<script>alert('Preencha todos os campos!');</script>";
 		echo "<script>window.history.back();</script>";
 		die();		
 	}
-	$outroEsporte = $_POST["esporte19"];
+	$outroEsporte = isset($_POST["esporte19"]) ? $_POST["esporte19"]:"";
 
 	$outrasHab = isset($_POST["nadaOutrasHab"]) ? "":0;
 
@@ -72,6 +73,14 @@
 
 	$disponibilidade = $mat . '-' . $vesp . '-' . $not;
 
+	$notaEntrevista = $_POST["notaEntrevista"];
+
+	if(!is_numeric($notaEntrevista)){
+		echo "<script>alert('Nota para entrevista incorreta!');</script>";
+		echo "<script>window.history.back();</script>";
+		die();		
+	}
+
 	if(mysqli_connect_errno($conn)){
 		echo "failed to connect";
 		die();
@@ -86,13 +95,15 @@
 	date_default_timezone_set("America/Sao_Paulo");
 	$tempo = date("Y/m/d") . " " .  date("h:i:sa");
 	$id = $row["id"];
-	$sql = "INSERT INTO `entrevistacliente`(`user_id`, `data/hora`, `educ_integral`, `atend_especi`, `escrito_programa`, `nome_responsavel`, `hab_cultura&arte`, `hab_esporte&lazer`, `disponibilidade`, `unidade_escolar`, `outras_habilidades`, `nota`) VALUES ('$id','$tempo','$integral','$especializado','$programa','$nomeResp','$habArte', '$habEsporte', '$disponibilidade','$unidadeEscolar','$outrasHab', '$nota')";
+	echo "id = " . $id;
+	$sql = "INSERT INTO `entrevistacliente`(`user_id`, `data/hora`, `educ_integral`, `atend_especi`, `escrito_programa`, `nome_responsavel`, `hab_cultura&arte`, `outroArte`, `hab_esporte&lazer`, `outroEsporte`, `disponibilidade`, `unidade_escolar`, `outras_habilidades`, `notaExperiencia`, `notaFormacao`, `notaEntrevista`) VALUES ('$id','$tempo','$integral','$especializado','$programa','$nomeResp','$habArte','$outroArte', '$habEsporte', '$outroEsporte', '$disponibilidade','$unidadeEscolar','$outrasHab', '$nota', '0', '$notaEntrevista')";
 	if(mysqli_query($conn,$sql)){
 		echo "<script>alert('Dados salvos com sucesso!');</script>";
-		echo "<script>window.history.back();</script>";
+		echo "<script>window.location='http://localhost/CadastroEducador';</script>";
 	}
 	else{
-		echo "<script type='javascript'>alert('Erro ao salvar os dados.');</script>";
+		echo "<script>alert('Deu merda!');</script>";
+
 	}
 
 ?>
