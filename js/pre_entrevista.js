@@ -13,7 +13,7 @@ ajax.onreadystatechange = function(){
         for(var i = 0; i < data.length; i++){
             var firstName = data[i].nome;
             var cpf = data[i].cpf
-            html = html + '<tr><td><a onclick = "interview(&#39;' + firstName +  '&#39;)" href = "#">' + cpf + '</a></td> <td>' + firstName + '</td></tr>';
+            html = html + '<tr><td><a onclick = "interview(&#39;' + firstName +  '&#39;)" href = "#">' + cpf + '</a></td> <td><a onclick = "interview(&#39;' + firstName +  '&#39;)" href = "#">' + firstName + '</a></td></tr>';
         }
         html = html + '</table>'
         document.getElementById("data").innerHTML= html;
