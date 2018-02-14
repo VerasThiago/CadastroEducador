@@ -8,13 +8,10 @@ ajax.send();
 ajax.onreadystatechange = function(){
     if(this.readyState == 4 && this.status == 200){
         var data = JSON.parse(this.responseText);
-        var html = '<table id="myTable" style = "width : 100%;" ><tr class="header"><th style="width:20px; height: 20px; ">CPF</th><th style="width:20px;">Nome</th><th style="width:20px;">Nota</th></tr>'
-        //var html = ' <table id="myTable" style = "width: 100%; height: 400px; overflow: auto">';
+        var html = '<table id="myTable" style = "width : 100%;" ><tr class="header"><th  height: 20px; >CPF</th><th>Nome</th><th>Nota Experiência</th><th>Nota Formação</th><th>Nota Entrevista</th><th>Total</th></tr>'
         for(var i = 0; i < data.length; i++){
-            var firstName = data[i].nome;
-            var cpf = data[i].cpf
-            var nota = data[i].nota;
-            html = html + '<tr><td><a onclick = "interview(&#39;' + firstName +  '&#39;)" href = "#">' + cpf + '</a></td> <td>' + firstName + '</td><td>' + nota + '</td></tr>';
+          var total = parseInt(data[i].notaExperiencia) + parseInt(data[i].notaFormacao) + parseInt(data[i].notaEntrevista);
+          html = html + '<tr><td>' + data[i].cpf + '</td> <td>' + data[i].nome + '</td><td>' + data[i].notaExperiencia + '</td><td>' + data[i].notaFormacao + '</td><td>' + data[i].notaEntrevista + '</td><td>' + (total) + '</td></tr>';
         }
         html = html + '</table>'
         document.getElementById("data").innerHTML= html;
@@ -37,4 +34,12 @@ function filtroCPF() {
       }
     }       
   }
+}
+
+
+function dados(id){
+    if(typeof(Storage) !== "undefined") {
+        localStorage.setItem("dados",id);
+    }
+    //window.location='http://localhost/CadastroEducador/dados.html';
 }

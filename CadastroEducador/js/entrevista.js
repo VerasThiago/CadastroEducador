@@ -8,7 +8,11 @@ function passingName(){
 	    	nome = nome + " " + aux[1];
 	    	if(aux[1].toLowerCase() == 'da') nome = nome + " " + aux[2];
 	    }
-        document.getElementById("teste").innerHTML  = '<h2>Entrevista:<br> ' + nome + '</h2>';
+        document.getElementById("title").innerHTML  = '<h2>Entrevista:<br> ' + nome + '</h2>';
         document.getElementById("element_14").value = data;
     }
 }
+
+
+
+
