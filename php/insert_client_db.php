@@ -16,6 +16,12 @@
 	$fone = $_POST["fone"];
 	$rg = $_POST["rg"];
 	$cpf = $_POST["cpf"];
+	if(!is_numeric($cpf)){
+		echo "<script>alert('CPF inválido, digite apenas números!');</script>";
+		echo "<script>window.history.back();</script>";
+		die();
+
+	}
 	$email = $_POST["email"];
 	$data = $dia."-".$mes."-".$ano;
 

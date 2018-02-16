@@ -76,7 +76,7 @@
                             <span>
                                 <input id="element_6_1" name="integral" class="element radio" type="radio" value="1" />
                                 <label class="choice" for="element_6_1">Sim</label>
-                                <input id="element_6_2" name="integral" class="element radio" type="radio" value="2" />
+                                <input id="element_6_2" name="integral" class="element radio" type="radio" value="0" />
                                 <label class="choice" for="element_6_2">Não</label>
                             </span> 
                         </li>
@@ -85,8 +85,26 @@
                             <span>
                                 <input id="element_8_1" name="especializado" class="element radio" type="radio" value="1" />
                                 <label class="choice" for="element_8_1">Sim</label>
-                                <input id="element_8_2" name="especializado" class="element radio" type="radio" value="2" />
+                                <input id="element_8_2" name="especializado" class="element radio" type="radio" value="0" />
                                 <label class="choice" for="element_8_2">Não</label>
+                            </span> 
+                        </li>
+                        <li id="li_17" >
+                            <label class="description" for="element_7">UISM</label>
+                            <span>
+                                <input id="element_7_1" name="uism" class="element radio" type="radio" value="1" />
+                                <label class="choice" for="element_7_1">Sim</label>
+                                <input id="element_7_2" name="uism" class="element radio" type="radio" value="0" />
+                                <label class="choice" for="element_7_2">Não</label>
+                            </span> 
+                        </li>
+                        <li id="li_18" >
+                            <label class="description" for="element_7">Merenda</label>
+                            <span>
+                                <input id="element_7_1" name="merenda" class="element radio" type="radio" value="1" />
+                                <label class="choice" for="element_7_1">Sim</label>
+                                <input id="element_7_2" name="merenda" class="element radio" type="radio" value="0" />
+                                <label class="choice" for="element_7_2">Não</label>
                             </span> 
                         </li>
                         <li id="li_7" >
@@ -94,8 +112,41 @@
                             <span>
                                 <input id="element_7_1" name="programa" class="element radio" type="radio" value="1" />
                                 <label class="choice" for="element_7_1">Sim</label>
-                                <input id="element_7_2" name="programa" class="element radio" type="radio" value="2" />
+                                <input id="element_7_2" name="programa" class="element radio" type="radio" value="0" />
                                 <label class="choice" for="element_7_2">Não</label>
+                            </span> 
+                        </li>
+                        <li id="li_71" >
+                            <label class="description" for="element_6">Experiência em atividade voluntário na rede pública de Ensino(Comprovada por declaração da Unidade Escolar onde atua ou atuou)</label>
+                            <span>
+                                <input id="element_71_1" name="expVolun" class="element radio" type="radio" value="1" />
+                                <label class="choice" for="element_71_1">Sim</label>
+                                <input id="element_71_2" name="expVolun" class="element radio" type="radio" value="0" />
+                                <label class="choice" for="element_71_2">Não</label>
+                            </span>
+                            <li id="li_72" >
+                                <label class="description" for="element_71">Caso a resposta seja sim, quanto anos</label>
+                                <div>
+                                    <input id="element_71" name="anosExp" class="element text large" type="text" maxlength="255" value="0"/> 
+                                </div> 
+                            </li>
+                        </li>
+                        <li id="li_6" >
+                            <label class="description" for="element_6">Experiência relacionada à atividade a ser desenvolvida, mediante apresentação de documento comprobatório. </label>
+                            <span>
+                                <input id="element_6_1" name="expDesenvolvida" class="element radio" type="radio" value="1" />
+                                <label class="choice" for="element_6_1">Sim</label>
+                                <input id="element_6_2" name="expDesenvolvida" class="element radio" type="radio" value="0" />
+                                <label class="choice" for="element_6_2">Não</label>
+                            </span> 
+                        </li>
+                        <li id="li_6" >
+                            <label class="description" for="element_6">Experiencia em atividade voluntária nos termos da Lei nº 9.608/1998 em outras instituições, comprovada por declaração. </label>
+                            <span>
+                                <input id="element_6_1" name="expLei" class="element radio" type="radio" value="1" />
+                                <label class="choice" for="element_6_1">Sim</label>
+                                <input id="element_6_2" name="expLei" class="element radio" type="radio" value="0" />
+                                <label class="choice" for="element_6_2">Não</label>
                             </span> 
                         </li>
                         <li id="li_1" >
@@ -187,18 +238,7 @@
                             </span> 
                         </li>           
                         <li id="li_10" >
-                        <label class="description" for="element_14">Outras habilidades </label>
-                            <span>
-                                <input id="element_14_1" name="merend" class="element checkbox" type="checkbox" value="1" />
-                                <label class="choice" for="element_9_1">Merendeiro</label>
-                                <input id="element_14_2" name="nadaOutrasHab" class="element checkbox" type="checkbox" value="1" />
-                                <label class="choice" for="element_9_2">Não apresento outras habilidades</label>
-                                <label class="description" for="element_2">Outros</label>
-                                <div>
-                                    <textarea id="element_2" name="outrasHab" class="element textarea small"></textarea> 
-                                </div> 
-                            </span> 
-                        </li>      
+                 
                         <li id="li_9" >
                         <label class="description" for="element_9">Disponibilidade </label>
                             <span>
@@ -216,11 +256,94 @@
                                 <input id="element_4" name="unidadeEscolar" class="element text large" type="text" maxlength="255" value=""/> 
                             </div> 
                         </li>
-                        <li id="li_15" >
-                            <label class="description" for="element_4">Nota da Entrevista</label>
+                        <li id="li_119" >
+                            <label class="description" for="element_119">Nível Superior</label>
+                            <span>
+                                <input id="element_119_1" name="superiorComp" class="element checkbox" type="checkbox" value="1" />
+                                <label class="choice" for="element_119_1">Completo</label>
+                                <input id="element_119_2" name="superiorIncom" class="element checkbox" type="checkbox" value="0" />
+                                <label class="choice" for="element_119_2">Em curso</label>
+                                <input id="element_119_2" name="superiorNulo" class="element checkbox" type="checkbox" value="0" />
+                                <label class="choice" for="element_119_2">Não possui</label>
+                            </span> 
+                        </li>
+                        <li id="li_1" >
+                            <label class="description" for="element_1">Caso a resposta seja sim, qual o curso</label>
                             <div>
-                                <input id="element_4" name="notaEntrevista" class="element text small" type="text" maxlength="255" value=""/> 
+                                <input id="element_1" name="cursoSU" class="element text large" type="text" maxlength="255" value=""/> 
                             </div> 
+                        </li>
+                        <li id="li_49" >
+                            <label class="description" for="element_8">Ensino Médio, EJA 3º segmento e curso técnico de nível médio da Educação Profissional</label>
+                            <span>
+                                <input id="element_45_1" name="ensinomComp" class="element checkbox" type="checkbox" value="1" />
+                                <label class="choice" for="element_45_1">Completo</label>
+                                <input id="element_45_2" name="ensinomIncom" class="element checkbox" type="checkbox" value="2" />
+                                <label class="choice" for="element_45_2">Em curso</label>
+                                <input id="element_45_2" name="ensinomNulo" class="element checkbox" type="checkbox" value="3" />
+                                <label class="choice" for="element_45_2">Não possui</label>
+                            </span> 
+                        </li>
+                        <li id="li_1" >
+                            <label class="description" for="element_1">Caso a resposta seja sim, qual o curso</label>
+                            <div>
+                                <input id="element_1" name="cursoEM" class="element text large" type="text" maxlength="255" value=""/> 
+                            </div> 
+                        </li>
+
+                        <h2>Nota entrevista</h2>
+                        <li id="li_19" >
+                        	<label class="description" for="element_16">Apresentação Pessoal </label>
+    	                     	<span>
+	                                <input id="element_16_1" name="apreRuim" class="element checkbox" type="checkbox" value="1" />
+		                        	<label class="choice" for="element_16_1">0,0 - Ruim</label>
+	                                <input id="element_16_2" name="apreRegular" class="element checkbox" type="checkbox" value="1" />
+	                                <label class="choice" for="element_16_2">2,0 - Regular</label>
+	                                <input id="element_16_3" name="apreBoa" class="element checkbox" type="checkbox" value="1" />
+	                                <label class="choice" for="element_16_3">4,0 - Boa</label>
+	                                <input id="element_16_4" name="apreExcelente" class="element checkbox" type="checkbox" value="1" />
+	                                <label class="choice" for="element_16_4">8,0 - Excelente</label>
+                           		</span> 
+                        </li>
+                        <li id="li_49" >
+                       		<label class="description" for="element_21">Comunicação e desenvoltura </label>
+                       		<span>
+                                <input id="element_21_1" name="comuRuim" class="element checkbox" type="checkbox" value="1" />
+	                        	<label class="choice" for="element_21_1">0,0 - Ruim</label>
+                                <input id="element_21_2" name="comuRegular" class="element checkbox" type="checkbox" value="1" />
+                                <label class="choice" for="element_21_2">2,0 - Regular</label>
+                                <input id="element_21_3" name="comuBoa" class="element checkbox" type="checkbox" value="1" />
+                                <label class="choice" for="element_21_3">4,0 - Boa</label>
+                                <input id="element_21_4" name="comuExcelente" class="element checkbox" type="checkbox" value="1" />
+                                <label class="choice" for="element_21_4">8,0 - Excelente</label>
+                           		</span> 
+                        </li>
+                       			
+                        <li id="li_17" >
+                        	<label class="description" for="element_36">Demonstração de conhecimento</label>
+    	                        <span>
+	                                <input id="element_36_1" name="demoRuim" class="element checkbox" type="checkbox" value="1" />
+		                        	<label class="choice" for="element_36_1">0,0 - Ruim</label>
+	                                <input id="element_36_2" name="demoRegular" class="element checkbox" type="checkbox" value="1" />
+	                                <label class="choice" for="element_36_2">2,0 - Regular</label>
+	                                <input id="element_36_3" name="demoBoa" class="element checkbox" type="checkbox" value="1" />
+	                                <label class="choice" for="element_36_3">4,0 - Boa</label>
+	                                <input id="element_36_4" name="demoExcelente" class="element checkbox" type="checkbox" value="1" />
+	                                <label class="choice" for="element_36_4">8,0 - Excelente</label>
+                           		</span> 
+                        </li>
+                        <li id="li_16" >
+                        	<label class="description" for="element_46">Disponibilidade de tempo (Adequação as necessidade da unidade escolar)</label>
+    	                        <span>
+	                                <input id="element_46_1" name="dispoRuim" class="element checkbox" type="checkbox" value="1" />
+		                        	<label class="choice" for="element_46_1">0,0 - Ruim</label>
+	                                <input id="element_46_2" name="dispoRegular" class="element checkbox" type="checkbox" value="1" />
+	                                <label class="choice" for="element_46_2">2,0 - Regular</label>
+	                                <input id="element_46_3" name="dispoBoa" class="element checkbox" type="checkbox" value="1" />
+	                                <label class="choice" for="element_46_3">4,0 - Boa</label>
+	                                <input id="element_46_4" name="dispoExcelente" class="element checkbox" type="checkbox" value="1" />
+	                                <label class="choice" for="element_46_4">6,0 - Excelente</label>
+                           		</span> 
                         </li>
                         
                         <li id="nomeCliente" style = "display: none;" >

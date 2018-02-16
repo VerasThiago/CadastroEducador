@@ -176,6 +176,9 @@
 	
 	//$sql = "INSERT INTO `entrevistacliente`(`user_id`, `data/hora`, `educ_integral`, `atend_especi`, `escrito_programa`, `nome_responsavel`, `hab_cultura&arte`, `outroArte`, `hab_esporte&lazer`, `outroEsporte`, `disponibilidade`, `unidade_escolar`, `outras_habilidades`, `notaExperiencia`, `notaFormacao`, `notaEntrevista`) VALUES ('$id','$tempo','$integral','$especializado','$programa','$nomeResp','$habArte','$outroArte', '$habEsporte', '$outroEsporte', '$disponibilidade','$unidadeEscolar','$outrasHab', '$notaExperiencia', $notaFormacao, '$notaEntrevista')";
 	
+	echo $id . " " . $tempo . " " . $integral . " " . $respSuperior . " " . $respEnsinoMedio . " " . $especializado . " " . $programa . " " . $nomeResp . " " . $cursoSU . " " . $cursoEM . " " . $habArte . " " . $outroArte . " " . $habEsporte . " " . $outroEsporte . " " . $expVolun . " " . $anosExp . " " . $disponibilidade . " " . $unidadeEscolar . " " . $expLei . " " . $expDesenvolvida . " " . $notaExperiencia . " " . $notaFormacao . " " . $notaEntrevista;
+
+
 	$sql = "INSERT INTO `entrevistacliente`(`user_id`, `data/hora`, `educ_integral`, `superior`, `ensinoMedio`, `atend_especi`, `escrito_programa`, `nome_responsavel`, `cursoSU`, `cursoEM`, `hab_cultura&arte`, `outroArte`, `hab_esporte&lazer`, `outroEsporte`, `expVolun`, `anosExp`, `disponibilidade`, `unidade_escolar`, `expLei`, `expDesenvolvida`, `notaExperiencia`, `notaFormacao`, `notaEntrevista`) VALUES ('$id','$tempo','$integral','$respSuperior','$respEnsinoMedio','$especializado','$programa','$nomeResp','$cursoSU','$cursoEM','$habArte','$outroArte','$habEsporte','$outroEsporte','$expVolun','$anosExp','$disponibilidade','$unidadeEscolar','$expLei','$expDesenvolvida','$notaExperiencia','$notaFormacao','$notaEntrevista')";
 	if(mysqli_query($conn,$sql)){
 		echo "<script>alert('Dados salvos com sucesso!');</script>";
