@@ -68,7 +68,16 @@
         </div>
         <div class = "background" >
             <div id = "lista" class = "listaCliente">
-                <input type="text" id="myInput" onkeyup="filtroCPF()" placeholder="Digite o CPF do cliente" title="Type in a name">
+                <div class="row">
+                    <div class="col-md-11 ">
+                        <input type="text" id="myInput" onkeyup="filtroCPF()" placeholder="Digite o CPF do cliente" title="Type in a name">
+                    </div>
+                    <div class="col 1">
+
+                        <a href="filtro.html"><input id="filtro" class="button_text" type="submit"  name="submit" value="Filtrar" style = "margin-left: -20px; width: 80px; height: 48px;" /></a>
+                    </div>
+                </div>
+
                 <div id = "data" ></div>
             </div>
             <div idx = "info">
