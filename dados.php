@@ -1,8 +1,9 @@
 <?php
-	
+	// receber o nome do cliente mandado por ajax para buscar todos seus dados
+		
 	$conn = mysqli_connect("localhost", "root","","clientes");
 
-	$query = "SELECT * FROM entrevistacliente,dadoscliente WHERE entrevistacliente.user_id = dadoscliente.id ORDER BY (notaExperiencia+notaFormacao+notaEntrevista) DESC";
+	$query = "SELECT * FROM entrevistacliente,dadoscliente ..."; //completara sql
 
 	$result = mysqli_query($conn, $query);
 

@@ -1,94 +1,158 @@
 <!DOCTYPE html>
-    <html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <title>Seletiva Educador Social Voluntario</title>
-    	<meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+  <script src="js/consulta.js"></script>
+  <link rel="stylesheet" href="css/tabelaCliente.css">
+  <link rel="stylesheet" href="css/consulta.css">
 
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css" />
+  <title>Seletiva Educador Social Voluntario</title>
+  <link rel="stylesheet" type="type/css" href="style3.css"/>
+ </head>
+ <style>
+    body {
+        background-color: #363E50;
+        height: 1350px; 
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+
+
+ </style>
+ <body>
+  
+   <div class="site-main" id="sTop">
+       <div class="site-header">
+           <div class="main-header">
+               <div class="container">
+                   <div id="menu-wrapper">
+                       <div class="row">
+                           <nav class="navbar navbar-inverse" role="navigation">
+                               <div class="navbar-header">
+                                   <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                                       <span class="sr-only">Toggle navigation</span>
+                                       <span class="icon-bar"></span>
+                                       <span class="icon-bar"></span>
+                                       <span class="icon-bar"></span>
+                                   </button>
+                                   <a href="#top" class="navbar-brand">ESV</a>
+                                   <div id="main-nav" class="collapse navbar-collapse">
+                                       <ul class="menu-first nav navbar-nav" style="margin-right: 20px;">
+                                           <li class="active"><a href="index.html">Home</a></li>
+                                           <li><a href="index.html">Voltar</a></li>
+                                       </ul>                                    
+                                   </div> 
+                               </div>
+                           </nav>
+                       </div> 
+                   </div>                        
+               </div> 
+           </div> 
+       </div> 
+   </div> 
         
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/templatemo_misc.css">
-        <link rel="stylesheet" href="css/templatemo_style.css">
-        <link rel="stylesheet" href="css/owl-carousel.css">
-        <link rel="stylesheet" href="css/tabelaCliente.css">
-        <link rel="stylesheet" type="text/css" href="form/view.css" media="all">
-        <html xmlns="http://www.w3.org/1999/xhtml">
-        <script type="text/javascript" src="form/view.js"></script>
-        <script type="text/javascript" src="form/calendar.js"></script>
-        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
-        <script src="js/mobile_nav_toggle.js"></script>
-        <script src="js/consulta.js"></script>
-    </head>
-    <body>
-        <div class="site-main" id="sTop">
-            <div class="site-header">
-                <div class="main-header">
-                    <div class="container">
-                        <div id="menu-wrapper">
-                            <div class="row">
-                                <nav class="navbar navbar-inverse" role="navigation">
-                                    <div class="navbar-header">
-                                        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-                                        <a href="#top" class="navbar-brand">ESV</a>
-                                        <div id="main-nav" class="collapse navbar-collapse">
-                                            <ul class="menu-first nav navbar-nav" style="margin-right: 20px;">
-                                                <li class="active"><a href="index.html">Home</a></li>
-                                                <li><a href="index.html">Voltar</a></li>
-                                            </ul>                                    
-                                        </div> 
-                                    </div>
-                                </nav>
-                            </div> 
-                        </div>                        
-                    </div> 
-                </div> 
-            </div> 
-        </div> 
-
-        <div class="banner" style = "">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div id = "titulo" class="banner-content">
-                            <h2>Consulta Educadores</h2>
-                        </div>
-                    </div>
-                </div>
+   <div class="banner" style = "background-image: url('img/banner-bg.jpg');background-position: center;background-repeat: no-repeat; background-size: cover; " >
+       <div class="container">
+           <div class="row">
+               <div class="col-md-8 col-md-offset-2">
+                   <div id = "titulo" class="banner-content" style = "padding-top: 220px; padding-bottom: 30px;">
+                       <h2>Consulta Educadores</h2>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="container" style="width: 80%;">
+    <div class="container" style="width:800px;">
+      <button class="btn btn-info" onclick="voltar()" style="position: relative; left: 54%; top: 34px; width: 50%;">Voltar</button>
+      <form method="post" id="framework_form">
+        <div class="row">
+          <div class="col-md-6" href>
+            <div class="form-group">
+              <input style = "width: 100%;" type="submit" class="btn btn-info" name="submit" value="Filtrar" />
             </div>
+          </div>
+          <div class="col-md-6" href style="text-align-last: right;">
+          </div>
         </div>
-        <div class = "background" >
-            <div id = "lista" class = "listaCliente">
-                <div class="row">
-                    <div class="col-md-11 ">
-                        <input type="text" id="myInput" onkeyup="filtroCPF()" placeholder="Digite o CPF do cliente" title="Type in a name">
-                    </div>
-                    <div class="col 1">
 
-                        <a href="filtro.html"><input id="filtro" class="button_text" type="submit"  name="submit" value="Filtrar" style = "margin-left: -20px; width: 80px; height: 48px;" /></a>
-                    </div>
-                </div>
+        <div class="form-group" >
+          
+          <select id="framework" name="framework[]" multiple class="form-control"  >
 
-                <div id = "data" ></div>
-            </div>
-            <div idx = "info">
-            <div>
+            <!-- Vaga -->
+            <option value="educ_integral">Educa&#231;&#227;o Integral</option>
+            <option value="atend_especi">Atendimento Especializado</option>
+            <option value="uism">UISM</option>
+            <option value="merenda">Merenda</option>
+
+          
+            <option value="escrito_programa">Inscrito em algum Programa Social</option>
+            <option value="exp_volun">Experi&#234;ncia em atividade volunt&#225;ria</option>
+            
+
+            <!-- Formação -->
+            <option value="superior">Ensino Superior</option>
+            <option value="ensino_medio">Ensino M&#233;dio</option>
+            
+            <!-- Disponibilidade Código final 2-->
+            <option value="02">Matutino</option>
+            <option value="22">Vespertino</option>
+            <option value="42">Noturno</option>
+
+            <!-- Habilidade de Arte Código final 1-->
+            <option value="01">Acompanhamento de Lingua Portuguesa</option>
+            <option value="21">Acompanhamento de Matem&#225;tica</option>
+            <option value="41">Artesanato</option>
+            <option value="61">Inicia&#231;&#227;o Musical/Banda/Canto coral</option>
+            <option value="81">Cineclube</option>
+            <option value="101">Dan&#231;a</option>
+            <option value="121">Desenho</option>
+            <option value="141">Educa&#231;&#227;o Patrimonial</option>
+            <option value="161">Escultura/Cer&#226;mica</option>
+            <option value="181">Leitura</option>
+            <option value="201">Pintura</option>
+            <option value="221">Teatro/Pr&#225;ticas circences</option>
+
+            
+            <!-- Habilidade de Esporte Código final 0 -->
+            <option value="00">Atletismo</option>
+            <option value="20">Badminton</option>
+            <option value="40">Basquete</option>
+            <option value="60">Futebol</option>
+            <option value="80">Futsal</option>
+            <option value="100">Handebol</option>
+            <option value="120">Nata&#231;&#227;o</option>
+            <option value="140">T&#234;nis</option>
+            <option value="160">T&#234;nis de mesa</option>
+            <option value="180">Voleibol</option>
+            <option value="200">V&#244;lei de Praia</option>
+            <option value="220">Capoeira</option>
+            <option value="240">Xadrez tradicional e xadrez virtual</option>
+            <option value="260">Jud&#244;</option>
+            <option value="280">Karat&#234;</option>
+            <option value="300">Luta Ol&#237;mpica</option>
+            <option value="320">Taekwondo</option>
+            <option value="340">Gin&#225;stica r&#237;tmica</option>
+
+          </select>
         </div>
-        
-        <script src="js/vendor/jquery-1.11.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-        <script src="js/bootstrap.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-   
-    </body>
+
+      </form>
+    </div>
+    <input type="text" id="myInput" onkeyup="filtroCPF()" placeholder="Digite o CPF do cliente" title="Type in a name">
+    <div id="todos" style="height: 580px; overflow: auto;" ></div>
+    <div id="data" style="display: none;"></div>
+  </div>
+ </body>
 </html>
+
+<script>todos();</script>

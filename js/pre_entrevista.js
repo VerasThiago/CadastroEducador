@@ -1,6 +1,6 @@
-var ajax =  new XMLHttpRequest();
+var ajax =  new XMLHttpRequest(); //Mostrar todos os contratados
 var method = "GET";
-var url = "data.php";
+var url = "pre_entrevista.php";
 var asynchronous = true;
 ajax.open(method, url, asynchronous);
 ajax.send();
@@ -38,7 +38,7 @@ function filtroCPF() {
   }
 }
 
-function interview(name){
+function interview(name){ // Aqui onde salvo na web o nome do cliente para poder pegar na outra página e conseguir salvar no banco de dados linkado com seu nome
     if(typeof(Storage) !== "undefined") {
         localStorage.setItem("data",name);
     }
