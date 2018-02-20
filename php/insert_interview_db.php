@@ -85,7 +85,7 @@
 
 
 	// Pegando o ID do usuário que será salvo a entrevista, o nome dele veio do js que alterou o valor de um botão que estava com diplay : none
-	$query = "SELECT id FROM dadoscliente WHERE dadoscliente.nome = '$nome'"; /
+	$query = "SELECT id FROM dadoscliente WHERE dadoscliente.nome = '$nome'"; 
 	$result = mysqli_query($conn, $query);
 	$row=mysqli_fetch_assoc($result);
 	$id = $row["id"];
