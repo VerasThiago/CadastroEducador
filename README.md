@@ -3,7 +3,7 @@
 ## Tutorial
 
 1 - Possuir WAMP Server instalado no pc
-![](img/wampserver-logo.png)
+![](img/wamp_logo.png)
 
 2 - Baixar repositório
 
