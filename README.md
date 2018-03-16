@@ -14,7 +14,7 @@
 
 6 - Criar relação em cascata entre o id da tabela dadoscliente com o user_id da tabela entrevistacliente
 
-[](img/relation.png)
+![](img/relation.png)
 
 7 - Abrir no http://localhost/CadastroEducador/
 
