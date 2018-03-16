@@ -4,7 +4,8 @@
 
 1 - Possuir WAMP Server instalado no pc
 
-[http://www.wampserver.com/en/](img/wamp_logo.png)
+![](img/wamp_logo.png)
+[DOWNLOAD}(https://sourceforge.net/projects/wampserver/files/latest/download?source=files)
 
 2 - Baixar repositório
 
