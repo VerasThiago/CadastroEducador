@@ -11,6 +11,7 @@
 2 - Baixar repositório
 
 3 - Colocar repositório na pasta www aonde foi instalado o wamp server
+![](img/www.png)
 
 4 - Criar banco de dados chamado clientes
 
