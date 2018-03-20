@@ -36,3 +36,5 @@ CREATE TABLE `clientes`.`dadoscliente` ( `id` INT NOT NULL AUTO_INCREMENT , `nom
 7 - Open http://localhost/CadastroEducador/
 
 8 - Be Happy!
+
+PS: You can check out the final version without database [HERE](https://github.com/VerasThiago/CadastroEducador)
