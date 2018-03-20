@@ -1,6 +1,6 @@
 # CadastroEducador
 
-PS: You can check out the final version without database and downloading anything [HERE](https://github.com/VerasThiago/CadastroEducador)
+PS: You can check out the final version without database and downloading anything [HERE](https://verasthiago.github.io/CadastroEducador/)
 
 ## Tutorial (To run in your PC with database)
 
