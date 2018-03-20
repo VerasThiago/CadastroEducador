@@ -1,6 +1,8 @@
 # CadastroEducador
 
-## Tutorial
+PS: You can check out the final version without database and downloading anything [HERE](https://github.com/VerasThiago/CadastroEducador)
+
+## Tutorial (To run in your PC with database)
 
 1 - You need WAMP Server in your PC
 
@@ -37,4 +39,4 @@ CREATE TABLE `clientes`.`dadoscliente` ( `id` INT NOT NULL AUTO_INCREMENT , `nom
 
 8 - Be Happy!
 
-PS: You can check out the final version without database [HERE](https://github.com/VerasThiago/CadastroEducador)
+
